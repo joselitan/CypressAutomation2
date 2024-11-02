@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "checkJs": false,
+        "baseUrl": ".",
+        "paths": {
+            "cypress/*": [
+                "./node_modules/cypress/types/*"
+            ]
+        }
+    },
+    "include": [
+        "**/*.js"
+    ]
+    // ,
+    // "exclude": [
+    //     "node_modules",
+    //     "**/*.ts"
+    // ]
+}
+// "checkJs": true,
+// "exclude": [
+//     "node_modules",
+//     "**/*.ts"
+// ]

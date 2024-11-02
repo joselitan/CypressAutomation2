@@ -1,0 +1,28 @@
+{
+  "name": "cypressautomation2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:debug": "cross-env DEBUG=cypress:server:specs,cypress:server:project npx cypress run",
+    "test": "npx cypress run",
+    "headTest": "npx cypress run --headed",
+    "chromeTest": "npx cypress run test --browser chrome",
+    "recordDashBoardTest": "npx cypress run --record --key 4af3a2c4-47c4-425d-a4cd-cbced0ad2f36 ",
+    "GreenKartTest": "npx cypress run --spec \"cypress/integration/GreenKart/*\"",
+    "SmokeTest": "npx cypress run --spec \"cypress/integration/GreenKart/Test1.js\""
+  },
+  "author": "JM",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.15.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "@cypress/browserify-preprocessor": "^3.0.2"
+  }
+}
